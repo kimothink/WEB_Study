@@ -1,3 +1,4 @@
+
 new Vue({
   el: '#app',
   data: {
@@ -5,7 +6,7 @@ new Vue({
     list: []
   },
   created: function () {
-    axios.get('list.json').then(function (response) {
+    axios.get('./list.json').then(function (response) {
       // 데이터를 읽어 들였다면 list에 할당하기
       this.list = response.data
     }.bind(this)).catch(function (e) {
