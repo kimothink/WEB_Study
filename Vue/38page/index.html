@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta charset="utf-8" /> 
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+    <body>
+        <div id="app">
+            <!-- 1. 객체의 속성 출력하기 -->
+            <p>{{ message.value }}</p>
+            <!-- 2. 문자열의 길이 출력하기 -->
+            <p>{{ message.value.length }}</p>
+            <!-- 3. 리스트 내부의 요소 출력하기 -->
+            <p>{{ list[2] }}</p>
+            <!-- 4. 속성을 조합해서 사용하기 -->
+            <p>{{ list[num] }}</p>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
