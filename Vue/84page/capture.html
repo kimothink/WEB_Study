@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <meta charset="utf-8" /> 
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <div v-on:click.capture="handler('div1')">
+                div1
+                <div v-on:click="handler('div2')">
+                  div2
+                  <div v-on:click="handler('div3')">div3</div>
+                </div>
+              </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
